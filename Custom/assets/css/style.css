@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(71, 65, 65);
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer ul {
+    margin: auto;
+    list-style: none;
+    margin-left: 0;
+}
+
+footer ul li {
+    line-height: 30px;
+    color: #fff;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(80, 188, 238);
+}
+
+.mangXaHoi a {
+    color: rgb(180, 192, 197);
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.mangXaHoi a:hover {
+    color: rgb(80, 188, 238);
+}
