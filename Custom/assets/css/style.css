@@ -4,6 +4,73 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin: 0;
+}
+
+.clear-fix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ====== HEADING ========== */
+.header {
+    /* background-color: rgb(71, 65, 65); */
+    padding: 16px 0 16px 0;
+}
+
+.header-box {
+    justify-content: space-between;
+}
+
+.heading-img
+{
+    width: 250px;
+}
+
+.login-p {
+    margin-bottom: 44px;
+    font-size: 1.25rem;
+}
+
+/* search-box */
+.search-box {
+    border: 1px solid black;
+    margin-right: 30px;
+    padding: 4px;
+    width: 252px;
+}
+
+.txt-search {
+    padding: 4px;
+    outline: none;
+    border: none;
+    width: 205px;
+}
+
+.search-link {
+    padding: 8px;
+}
+
+.cart-img {
+    width: 50px;
+}
+
+/* =========== NAV =========== */
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 12px 0 12px 0;
+}
+
+
+/* ========= FOOTER ========== */
+
 footer {
     color: #fff;
     font-size: 14px;
@@ -47,3 +114,4 @@ footer ul li a:hover {
 .mangXaHoi a:hover {
     color: rgb(80, 188, 238);
 }
+
