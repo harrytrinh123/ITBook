@@ -45,21 +45,31 @@ h1 {
 /* search-box */
 .search-box {
     border: 1px solid black;
-    margin-right: 30px;
-    padding: 4px;
-    width: 252px;
+    width: 50%;
+    text-align: left;
+    padding: 0;
+    
 }
 
 .txt-search {
     padding: 4px;
     outline: none;
     border: none;
-    width: 205px;
+    width: 80%;
+    border-right: 1px solid black;
+    padding: auto;
+    height: 100%;
 }
 
-.search-link {
-    padding: 8px;
+.search-link{
+    width: 18%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
 }
+
 
 .cart-img {
     width: 50px;
