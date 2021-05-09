@@ -38,6 +38,10 @@ h1 {
     font-size: 1.25rem;
 }
 
+.box-right {
+    padding-top: 16px;
+}
+
 /* search-box */
 .search-box {
     border: 1px solid black;
