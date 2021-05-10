@@ -1,0 +1,24 @@
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("/Custom/images/background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: blue;
+    margin-bottom: 12px;
+}
+
+.signin, .register {
+    background-color: white;
+    margin: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px black;
+    min-width: 200px;
+}
