@@ -30,7 +30,9 @@ h1 {
 
 .heading-img
 {
-    width: 250px;
+    /* width: 250px; */
+    box-shadow: 1px 2px 5px 1px #ccc;
+    border-radius: 5px;
 }
 
 .login-p {
@@ -59,6 +61,8 @@ h1 {
     border-right: 1px solid black;
     padding: auto;
     height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .search-link{
@@ -70,9 +74,16 @@ h1 {
     padding: 12px;
 }
 
+.search-link:hover {
+    background-color: rgba(250, 167, 42, 0.822);
+}
 
 .cart-img {
     width: 50px;
+}
+
+.cart-img:hover {
+    background-color: rgba(250, 167, 42, 0.822);
 }
 
 /* =========== NAV =========== */
@@ -82,6 +93,10 @@ nav {
     margin: 12px 0 12px 0;
 }
 
+.nav-item:hover {
+    background-color: #ccc;
+    border-radius: 4px;
+}
 
 /* ========= FOOTER ========== */
 
