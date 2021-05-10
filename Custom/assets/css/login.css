@@ -20,4 +20,5 @@ h2 {
     margin: 4px;
     border-radius: 8px;
     box-shadow: 0 0 5px 1px black;
+    min-width: 200px;
 }
