@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
   <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/login.css">
-  <title>Đăng nhập</title>
+  <title>Đăng ký</title>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
           <img class="user-img w-50 p-3" src="./images/employee.png" alt="user">
         </div>
       </div>
-      <!-- form login -->
+      <!-- form register -->
       <div class="col-md-6 textce p-md-5">
-        <h2 class="text-center text-primary font-weight-bold">Đăng nhập</h2>
+        <h2 class="text-center text-primary font-weight-bold">Đăng ký</h2>
         <form action="">
           <div class="form-group">
             <label for="unam">Tài khoản:</label>
@@ -29,18 +29,21 @@
           </div>
           <div class="form-group">
             <label for="pwd">Mật khẩu:</label>
-            <input type="text" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
           </div>
           <div class="form-group">
-            <input type="checkbox" id="remeber"> Nhớ tài khoản
+            <label for="phone">Điện thoạt:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Nhập điện thoại" name="phone">
           </div>
-          <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" required>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="accept"> Tôi chấp nhận với <a href="#">điều khoản sử dụng.</a>
+          </div>
+         <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
         </form>
-        <p class="forgot text-right">
-          <a href="#">Quên mật khẩu?</a>
-        </p>
-        <p class="register text-right">
-          <a href="./register.html" >Tạo tài khoản mới <i class="fas fa-long-arrow-alt-right"></i></a>
         </p>
       </div>
     </div>

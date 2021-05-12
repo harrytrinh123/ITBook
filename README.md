@@ -14,4 +14,4 @@ Admin:\
 •	Login.html\
 •	Index.html\
 •	Product-management.html\
-•	Account.html\
+•	Account.html
