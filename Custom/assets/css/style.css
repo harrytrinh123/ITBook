@@ -14,10 +14,6 @@ h1 {
     display: table;
 }
 
-.flex {
-    display: flex;
-}
-
 /* ====== HEADING ========== */
 .header {
     /* background-color: rgb(71, 65, 65); */
@@ -37,7 +33,6 @@ h1 {
 
 .login-p {
     margin-bottom: 44px;
-    font-size: 1.25rem;
 }
 
 .box-right {
@@ -63,6 +58,7 @@ h1 {
     height: 100%;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    font-size: 1.25rem;
 }
 
 .search-link{
