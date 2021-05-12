@@ -156,7 +156,7 @@ footer ul li a:hover {
 
 /* contact bar */
 .contact-bar{
-    left: 30px;
+    right: 25px;
     bottom: 30px;
     position: fixed;
     z-index: 998;
