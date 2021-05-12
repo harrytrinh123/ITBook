@@ -70,16 +70,8 @@ h1 {
     padding: 12px;
 }
 
-.search-link:hover {
-    background-color: rgba(250, 167, 42, 0.822);
-}
-
 .cart-img {
     width: 50px;
-}
-
-.cart-img:hover {
-    background-color: rgba(250, 167, 42, 0.822);
 }
 
 /* =========== NAV =========== */
