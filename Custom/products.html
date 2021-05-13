@@ -1,165 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tất cả sản phẩm</title>
-    <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../jquery-3.6.0.min.js">
-    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="../Custom/assets/css/style.css">
-    <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tất cả sản phẩm</title>
+  <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../jquery-3.6.0.min.js">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="../Custom/assets/css/style.css">
+  <link rel="stylesheet" href="../Custom/assets/css/products.css">
 </head>
+
 <body>
-    <!-- header -->
-    <header class="header">
-      <div class="container">
-        <div class="row header-box">
-          <!-- Heading Logo -->
-          <div class="col-md-4">
-            <h1 class="text-center">
-              <a href="." class="heading-link">
-                <img class="heading-img w-75" src="./images/logo.png" alt="logo.ong"></img>
-              </a>
-            </h1>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="row header-box">
+        <!-- Heading Logo -->
+        <div class="col-md-4">
+          <h1 class="text-center">
+            <a href="." class="heading-link">
+              <img class="heading-img w-75" src="./images/logo.png" alt="logo.ong"></img>
+            </a>
+          </h1>
+        </div>
+        <!-- Login and SearchButton -->
+        <div class="col-md-8 text-center text-md-right">
+          <div class="box-right">
+            <p class="login-p">Bạn muốn mua sách? Hãy <a href="login.html">Đăng nhập!</a></p>
+
+            <div class="row p-3">
+              <div class="col-10 search-box">
+                <input type="text" class="txt-search">
+                <a href="#" class="search-link">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="#" class="cart-link">
+                  <img src="./images/icons8-fast-cart-96.png" alt="" class="cart-img">
+                </a>
+              </div>
+            </div>
           </div>
-          <!-- Login and SearchButton -->
-          <div class="col-md-8 text-center text-md-right">
-            <div class="box-right">
-              <p class="login-p">Bạn muốn mua sách? Hãy <a href="login.html">Đăng nhập!</a></p>
-  
-              <div class="row p-3">
-                <div class="col-10 search-box">
-                  <input type="text" class="txt-search">
-                  <a href="#" class="search-link">
-                    <i class="fas fa-search"></i>
+        </div>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a href="." class="navbar-brand">Home</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Tất cả sản phẩm</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Lập trình web</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Giải thuật</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Ngôn ngữ lập trình</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 product_sidebar">
+        <h2 class="danhmuc">DANH MỤC</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Tất cả sản phẩm</li>
+          <li class="list-group-item">Sản phẩm bán chạy</li>
+          <li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li>
+          <li class="list-group-item">Ngôn ngữ lập trình</li>
+          <li class="list-group-item">Trí tuệ nhân tạo</li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+
+        <!-- PRODUCTS -->
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product ">
+              <div class="block_product_img">
+                <img src="../Custom/images/code-dao-ki-su.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
                   </a>
                 </div>
-                <div class="col-2 text-center">
-                  <a href="#" class="cart-link">
-                    <img src="./images/icons8-fast-cart-96.png" alt="" class="cart-img">
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Code dạo ký sự
                   </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    200.000 VND
+                  </span>
+
                 </div>
               </div>
             </div>
           </div>
-    </header>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <a href="." class="navbar-brand">Home</a>
-  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Tất cả sản phẩm</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Lập trình web</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">AI</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Giải thuật</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Ngôn ngữ lập trình</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- main -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <!-- products -->
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="block_product">
-                    <div class="block_product_img">
-                        <img src="../Custom/images/code-dao-ki-su.jpg" alt="IMG-PRODUCT">
-                    </div>
-                    
-                    <div class="block_product_icon">
-                      <a href="#" class="btn-heart">
-                          <img class="icon-heart1" src="../Custom/images/icons/icon-heart-01.png" alt="ICON">
-                          <img class="icon-heart2" src="../Custom/images/icons/icon-heart-02.png" alt="ICON">
-                      </a>
-                      <a href="#" class="btn-card">
-                        <img class="icon-card1" src="../Custom/images/icons/icon-heart-01.png" alt="ICON">
-                        <img class="icon-card2" src="../Custom/images/icons/icon-heart-02.png" alt="ICON">
-                      </a>
-                    </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/clean-code.jpg" alt="IMG-PRODUCT">
 
-                    <div class="block_product_txt">
-                      <a href="product-detail.html" class="block_product_txt_child1_tit1">
-                          Esprit Ruffle Shirt
-                      </a>
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
 
-                      <span class="block_product_txt_child1_tit2">
-                          $16.64
-                      </span>
-      
-                    </div>
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
                 </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    The clean code
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    169.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/gian-diep-mang.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Gián điệp mạng
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/lieu-it-da-het-thoi.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Liệu IT đã hết thời?
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Lược sử hacker.
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/the-design-of-everyday-things.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    The design of everyday things
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/nghe_thuat_an_minh.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    Nghệ thuật ẩn mình.
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block_product -->
+          <div class="col-sm-6 col-md-4">
+            <div class="block_product">
+              <div class="block_product_img">
+                <img src="../Custom/images/how-technology-works.jpg" alt="IMG-PRODUCT">
+
+                <a href="#" class="block_product_quickview btn btn-primary">
+                  Quick View
+                </a>
+              </div>
+
+              <div class="block_product_info">
+                <div class="block_product_icon float-right">
+                  <a href="#" class="btn-heart">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#" class="btn-cart">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+
+                <div class="block_product_txt float-left">
+                  <a href="product-detail.html" class="block_product_txt_child1_tit1">
+                    How technology works?
+                  </a>
+
+                  <span class="block_product_txt_child1_tit2">
+                    150.000 VND
+                  </span>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>LIÊN HỆ</h3>                
-                    <ul>
-                        <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
-                        <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
-                        <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>LIÊN KẾT</h3>
-                    <ul>
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="products.html">Tất cả sản phẩm</a></li>
-                        <li><a href="#">Lập trình web</a></li>
-                        <li><a href="#">AI</a></li>
-                        <li><a href="#">Giải thuật</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>ĐĂNG KÝ NHẬN TIN</h3>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">@</span>
-                        </div>
-                        <input id="emailNhanTin" type="text" class="form-control" placeholder="Enter your email">
-                        <p>Hãy nhập email của bạn vào đây để nhận tin</p>
-                    </div>
-                    <div class="mangXaHoi">
-                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
-                    </div>
+  </div>
 
-                </div>
-                <div class="col-md-3">
-                  <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-                  <div class="fanpage">
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1" nonce="7nroEQad"></script>
-                    <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote></div>
-                  </div>
-                </div>
-            </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>LIÊN HỆ</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+            <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+          </ul>
         </div>
-    </footer>
-    <ul class="contact-bar">
-        <li class="facebook">
-        <a href="https://m.me" target="_blank" rel="nofollow"></a>
-        </li>
-        <li class="zalo">
-        <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
-        </li>
-    </ul>
+        <div class="col-md-3">
+          <h3>LIÊN KẾT</h3>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tất cả sản phẩm</a></li>
+            <li><a href="#">Lập trình web</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Giải thuật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>ĐĂNG KÝ NHẬN TIN</h3>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input id="emailNhanTin" type="text" class="form-control" placeholder="Enter your email">
+            <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+          </div>
+          <div class="mangXaHoi">
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <div class="fanpage">
+            <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
+              nonce="7nroEQad"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
+              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <ul class="contact-bar">
+    <li class="facebook">
+      <a href="https://m.me" target="_blank" rel="nofollow"></a>
+    </li>
+    <li class="zalo">
+      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
+    </li>
+  </ul>
 </body>
+
 </html>
