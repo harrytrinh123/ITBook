@@ -86,6 +86,121 @@
 
 .left-img-ad {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 /* product details */
+.book_detail {
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+}
+
+.book_detail_pics_slide {
+    width: 100%;
+    height: 500px;
+}
+
+.book_detail_tit {
+    color: #333;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.book_detail_pri {
+    color: #333;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.book_detail_txt {
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.product_detail_item_quantity {
+    width: 50px;
+}
+
+.product_detail_icon_mangXH {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.product_detail_icon_mangXH a{
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.product_detail_icon_mangXH a:hover{
+    color: rgb(130, 177, 3);
+    text-decoration: none;
+    
+}
+
+.product_detail_frm {
+    padding: 10px;
+}
+
+.select_wrapper {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.product_detail_btn .btn{
+    width: 150px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#add_to_cart {
+    background-color: rgb(67, 130, 247);
+}
+
+#buy_now {
+    background-color: rgb(130, 177, 3);
+}
+
+.mota_binhluan {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user_avatar img{
+    width: 30px;
+    height: 30px;
+}
+
+.user_avatar a {
+    color: black;
+}
+
+.user_input_comment {
+    position: relative;
+}
+
+.user_input_comment img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+}
+
+.user_input_comment textarea {
+    width: 300px;
+    border-radius: 2px;
+    border: 1px solid rgb(177, 176, 176);
+    margin-left: 40px;
+}
+
+.mota_binhluan h6 {
+    font-size: 20px;
+    color: rgb(65, 58, 58);
+}
