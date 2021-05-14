@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sách</title>
+  <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../jquery-3.6.0.min.js">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="../Custom/assets/css/style.css">
+  <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="row header-box">
+        <!-- Heading Logo -->
+        <div class="col-md-4">
+          <h1 class="text-center">
+            <a href="." class="heading-link">
+              <img class="heading-img w-75" src="./images/logo.png" alt="logo.ong"></img>
+            </a>
+          </h1>
+        </div>
+        <!-- Login and SearchButton -->
+        <div class="col-md-8 text-center text-md-right">
+          <div class="box-right">
+            <p class="login-p">Bạn muốn mua sách? Hãy <a href="login.html">Đăng nhập!</a></p>
+
+            <div class="row p-3">
+              <div class="col-10 search-box">
+                <input type="text" class="txt-search">
+                <a href="#" class="search-link">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              <div class="col-2 text-center">
+                <a href="#" class="cart-link">
+                  <img src="./images/icons8-fast-cart-96.png" alt="" class="cart-img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a href="." class="navbar-brand">Home</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="products.html" class="nav-link">Tất cả sản phẩm</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Lập trình web</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Giải thuật</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Ngôn ngữ lập trình</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 product_sidebar">
+        <h2 class="danhmuc">DANH MỤC</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Tất cả sản phẩm</li>
+          <li class="list-group-item">Sản phẩm bán chạy</li>
+          <li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li>
+          <li class="list-group-item">Ngôn ngữ lập trình</li>
+          <li class="list-group-item">Trí tuệ nhân tạo</li>
+        </ul>
+        <img class="left-img-ad" src="../Custom/images/love-book.jpg" alt="">
+        <img class="left-img-ad" src="../Custom/images/love-book2.png" alt="">
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-6 book_detail_pics">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner ">
+                <div class="carousel-item active book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item book_detail_pics_slide">
+                  <img src="../Custom/images/clean-code2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="book_detail">
+              <h4 class="book_detail_tit">
+                The clean code.
+              </h4>
+
+              <span class="book_detail_pri">
+                200.000 VND
+              </span>
+
+              <p class="book_detail_txt">
+                Robert Martins Clean Code Agile Software Craftmanship.
+              </p>
+            </div>
+            <form class="product_detail_frm" action="POST">
+              <div class="select_wrapper">
+                <label for="soLuong">Số lượng</label>
+                <input type="number" min="1" value="1" class="product_detail_item_quantity">
+              </div>
+              <div class="row product_detail_btn">
+                <div class="col-md-6">
+                  <button id="add_to_cart" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Thêm vào
+                    giỏ</button>
+                </div>
+                <div class="col-md-6">
+                  <button id="buy_now" class="btn btn-warning"><i class="fas fa-check-circle"></i> Mua ngay</button>
+                </div>
+              </div>
+            </form>
+            <div class="product_detail_icon_mangXH">
+              <a href="#" class="product_detail_icon_mangXH_FB" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="#" class="product_detail_icon_mangXH_TW" data-tooltip="Twitter">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+
+              <a href="#" class="product_detail_icon_mangXH_GG" data-tooltip="Google Plus">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mota_binhluan">
+          <h6>Mô tả sản phẩm</h6>
+          <hr>
+          <p>Robert Cecil Martin, thường được gọi là "Uncle Bob", người Mỹ. Ông là một kỹ sư phần mềm, người tư vấn, và
+            là tác giả của nhiều cuốn best-seller. Ông được công nhận nhiều nhất vì đã phát triển nhiều nguyên tắc thiết
+            kế phần mềm và là người sáng lập ra Tuyên ngôn Agile rất có ảnh hưởng trong giới phát triển phần mềm.
+
+            Martin là tác giả của nhiều cuốn sách và các bài báo trên tạp chí. Ông từng là tổng biên tập của tạp chí C++
+            Report và từng là chủ tịch đầu tiên của Agile Alliance.</p>
+          <h6>Bình luận</h6>
+          <hr>
+          <div class="user_input_comment">
+            <img src="./images/user_avatar3.png" alt="">
+            <textarea name="" id="" cols="80" rows="2" placeholder="Thêm bình luận..."></textarea>
+            <hr>
+          </div>
+          <div class="product_detail_binhluan">
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar.png" alt="">
+                <a href="#">Thanh Nhã</a>
+  
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Nguyên bộ bao nhiêu tiền vậy shop?</span>
+              </div>
+            </div>
+          </div>
+          <div class="product_detail_binhluan">
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar2.png" alt="">
+                <a href="#">Quốc Hoàng</a>
+  
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Sách này có bản cho kindle không ạ?</span>
+              </div>
+            </div>
+          </div>
+          <div class="product_detail_binhluan">
+  
+            <div class="row">
+              <div class="col-sm-3 user_avatar">
+                <img src="./images/user_avatar3.png" alt="">
+                <a href="#">Hồng Đạt</a>
+  
+              </div>
+              <div class="col-sm-9 user_comment">
+                <span>Sách hay quá, sắp tới sẽ mua.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>LIÊN HỆ</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+            <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>LIÊN KẾT</h3>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tất cả sản phẩm</a></li>
+            <li><a href="#">Lập trình web</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Giải thuật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>ĐĂNG KÝ NHẬN TIN</h3>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input id="emailNhanTin" type="text" class="form-control" placeholder="Enter your email">
+            <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+          </div>
+          <div class="mangXaHoi">
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <div class="fanpage">
+            <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
+              nonce="7nroEQad"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
+              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <ul class="contact-bar">
+    <li class="facebook">
+      <a href="https://m.me" target="_blank" rel="nofollow"></a>
+    </li>
+    <li class="zalo">
+      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
+    </li>
+  </ul>
+</body>
+
+</html>
