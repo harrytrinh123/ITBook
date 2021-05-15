@@ -144,7 +144,11 @@ footer ul li a:hover {
 
 /* contact bar */
 .contact-bar{
+<<<<<<< HEAD
+    right: 20px;
+=======
     right: 25px;
+>>>>>>> main
     bottom: 30px;
     position: fixed;
     z-index: 998;
