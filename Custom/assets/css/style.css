@@ -18,6 +18,8 @@ h1 {
 
 header {
     padding: 12px 0;
+    background-color: rgb(34, 142, 216);
+    margin-bottom: 12px;
 }
 
 header i {
