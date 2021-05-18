@@ -64,6 +64,11 @@ header div[class*='col-']
     font-size: 0.85rem;
 }
 
+.btn-search i {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
 .span-text {
     font-size: 0.85rem;
     display: inline-block;
