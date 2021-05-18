@@ -15,78 +15,94 @@ h1 {
 }
 
 /* ====== HEADING ========== */
-.header {
-    /* background-color: rgb(71, 65, 65); */
-    padding: 16px 0 16px 0;
+
+header {
+    padding: 12px 0;
+    background-color: rgb(34, 142, 216);
+    margin-bottom: 12px;
 }
 
-.header-box {
-    justify-content: space-between;
+header i {
+    font-size: 30px;
 }
 
-.heading-img
+header div[class*='col-']
 {
-    /* width: 250px; */
-    box-shadow: 1px 2px 5px 1px #ccc;
-    border-radius: 5px;
+    margin: 8px 0;
 }
 
-.login-p {
-    margin-bottom: 44px;
+.heading-img {
+    max-width: 100%;
+    max-height: 100px;
 }
 
-.box-right {
-    padding-top: 16px;
-}
-
-/* search-box */
 .search-box {
-    border: 1px solid black;
-    width: 50%;
-    text-align: left;
-    padding: 0;
-    
+    height: 40px;
 }
 
 .txt-search {
-    padding: 4px;
-    outline: none;
+    width: 74%;
+    height: 100%;
+    border-radius: 0;
     border: none;
-    width: 80%;
-    border-right: 1px solid black;
-    padding: auto;
-    height: 100%;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-size: 1.25rem;
+    outline: none;
+    padding: 4px;
 }
 
-.search-link{
-    width: 18%;
-    height: 100%;
-    vertical-align: top;
+.btn-search:hover {
+    color: white;
+}
+
+.btn-search {
+    background-color: rgb(13, 92, 182);
+    color: #fff;
+    width: 24%;
+    height: 101%;
+    border-radius: 0;
+    position: relative;
+    top: -2px;
+    left: -4px;
+    padding: 3px;
+    font-size: 0.85rem;
+}
+
+.btn-search i {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.span-text {
+    font-size: 0.85rem;
     display: inline-block;
-    text-align: center;
-    padding: 12px;
 }
 
-.cart-img {
-    width: 50px;
+.box-link .number {
+    color: black;
+    background-color: rgb(252, 236, 95);
+    padding: 0 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -8px;
 }
 
-/* =========== NAV =========== */
-nav {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 12px 0 12px 0;
-    background-color: rgb(34, 142, 216);
+/* Navbar */
+#collapsibleNavbar, #collapsibleUser {
+    width: 200px;
+    z-index: 1;
+    padding: 8px 12px;
+    left: 0;
 }
 
-.nav-item:hover {
-    background-color: #ccc;
-    border-radius: 4px;
+#collapsibleNavbar .nav-link {
+    font-size: 14px;
+    color: black;
 }
 
+#collapsibleUser .btn {
+    width: 100%;
+    margin: 4px 0;
+}
 /* ========= FOOTER ========== */
 
 footer {
@@ -144,7 +160,7 @@ footer ul li a:hover {
 
 /* contact bar */
 .contact-bar{
-    right: 25px;
+    right: 20px;
     bottom: 30px;
     position: fixed;
     z-index: 998;
