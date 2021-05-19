@@ -20,6 +20,7 @@ h1 {
     padding: 8px 12px;
     left: 0;
     top: 120%;
+    box-shadow: 0 0 2px 1px #ccc;
 }
 
 .box::before {
@@ -27,7 +28,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-width: 12px;
-    border-color: transparent transparent #f8f9fa; transparent;
+    border-color: transparent transparent #f8f9fa transparent;
     border-style: solid;
     position: absolute;
     top: -22px;
