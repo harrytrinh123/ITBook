@@ -14,12 +14,37 @@ h1 {
     display: table;
 }
 
+.box {
+    width: 200px;
+    z-index: 1;
+    padding: 8px 12px;
+    left: 0;
+    top: 120%;
+    box-shadow: 0 0 2px 1px #ccc;
+}
+
+.box::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-width: 12px;
+    border-color: transparent transparent #f8f9fa transparent;
+    border-style: solid;
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    z-index: -1;
+}
+
+.border-radius-5px {
+    border-radius: 5px;
+}
+
 /* ====== HEADING ========== */
 
 header {
     padding: 12px 0;
     background-color: rgb(34, 142, 216);
-    margin-bottom: 12px;
 }
 
 header i {
@@ -76,23 +101,21 @@ header div[class*='col-']
     display: inline-block;
 }
 
-.box-link .number {
+.cart {
+    position: relative;
+}
+
+.cart .number {
     color: black;
     background-color: rgb(252, 236, 95);
     padding: 0 6px;
     border-radius: 50%;
     position: absolute;
-    top: -12px;
-    right: -8px;
+    top: -20px;
+    right: -12px;
 }
 
 /* Navbar */
-#collapsibleNavbar, #collapsibleUser {
-    width: 200px;
-    z-index: 1;
-    padding: 8px 12px;
-    left: 0;
-}
 
 #collapsibleNavbar .nav-link {
     font-size: 14px;
@@ -103,6 +126,12 @@ header div[class*='col-']
     width: 100%;
     margin: 4px 0;
 }
+
+/* ========= SLIDER =========== */
+.slider img{
+    height: 200px;
+}
+
 /* ========= FOOTER ========== */
 
 footer {
