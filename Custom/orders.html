@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sách IT mới nhất được cập nhật thường xuyên</title>
+    <title>Đơn hàng của tôi | sachit.com</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../jquery-3.6.0.min.js">
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/account.css">
 </head>
 
 <body class="bg-light">
@@ -96,142 +95,18 @@
     <!-- Content -->
     <div class="content mb-3">
         <div class="container">
-            <h4 class="text-primary mb-3">Thông tin tài khoản</h4>
-            <form class="form">
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="uname">Họ tên</label>
-                        </div>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" id="uname" required>
-                        </div>
-                    </div>
+            <h4 class="text-primary mb-3">Đơn hàng của tôi</h4>
+            <div class="area">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="order-table">
+                        <th class="table-heading">Mã đơn hàng</th>
+                        <th class="table-heading">Ngày mua</th>
+                        <th class="table-heading">Sản phẩm</th>
+                        <th class="table-heading">Tổng tiền</th>
+                        <th class="table-heading">Trạng thái đơn hàng</th>
+                    </table>
                 </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="phone">Số điện thoại</label>
-                        </div>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" id="phone" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="address">Địa chỉ</label>
-                        </div>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" id="address" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col-md-5">
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="sex">Giới tính</label>
-                        </div>
-                        <div class="col-md-5">
-                            <input class="sex" type="radio" name="sex" id="male" checked> Nam
-                            <input class="sex ml-3" type="radio" name="sex" id="female"> Nữ
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <label for="birth-day">Ngày sinh</label>
-                        </div>
-                        <div class="col-md-5">
-                            <select class="birth-day" name="day" id="day">
-                                <option value="0">Ngày</option>
-                            </select>
-                            <select class="birth-day" name="month" id="month">
-                                <option value="0">Tháng</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
-                            <select class="birth-day" name="year" id="year">
-                                <option value="0">Năm</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-5">
-                            <input type="checkbox" name="check-change" id="check-change"> Thay đổi mật khẩu
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="password-change">
-                    <div class="form-group">
-                        <div class="row align-items-center">
-                            <div class="col-md-2">
-                                <label for="password">Mật khẩu cũ</label>
-                            </div>
-                            <div class="col-md-5">
-                                <input type="password" class="form-control" id="password">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row align-items-center">
-                            <div class="col-md-2">
-                                <label for="new-password">Mật khẩu mới</label>
-                            </div>
-                            <div class="col-md-5">
-                                <input type="password" class="form-control" id="new-password">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row align-items-center">
-                            <div class="col-md-2">
-                                <label for="re-password">Nhập lại</label>
-                            </div>
-                            <div class="col-md-5">
-                                <input type="password" class="form-control" id="re-password">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-5">
-                            <button class="btn btn-warning mt-2 ">Cập nhật</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -293,7 +168,7 @@
     <script src="/jquery-3.6.0.min.js"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-    <script src="./assets/js/account.js"></script>
+    <script src="./assets/js/order.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tài khoản | sachit.com</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jquery-3.6.0.min.js">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+    <header class="mb-3">
+        <div class="container">
+            <div class="row align-items-center text-md-center">
+                <!-- Home image -->
+                <div class="col-md-1">
+                    <a href="" class="home-link">
+                        <img src="./images/logo.png" alt="" class="heading-img bg-white">
+                    </a>
+                </div>
+                <!-- Category -->
+                <div class="col-md-1 position-relative">
+                    <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <i class="fas fa-bars text-white"></i>
+                        <span class="text-white span-text">Danh mục</span>
+                    </a>
+                    <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
+                        <ul class="navbar-nav text-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lập trình web</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">AI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Giải thuật</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search box -->
+                <div class="col-md-8">
+                    <div class="search-box">
+                        <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
+                        <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="col-md-1">
+                    <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+                        data-target="#collapsibleUser">
+                        <i class="far fa-user text-white"></i>
+                        <span class="text-white span-text">Tài khoản</span>
+                    </a>
+                    <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
+                        <ul class="navbar-nav text-left">
+                            <li class="nav-item">
+                                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary">Hỗ trợ</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Cart -->
+                <div class="col-md-1">
+                    <a href="#" class="box-link position-relative d-inline-block">
+                        <span class="cart">
+                            <i class="fas fa-shopping-cart text-white">
+                            </i>
+                            <span class="number">0</span>
+                        </span>
+                        <span class="text-white span-text">Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content mb-3">
+        <div class="container">
+            <h4 class="text-primary mb-3">Thông tin tài khoản</h4>
+            <form class="form">
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="uname">Họ tên</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="uname" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="phone">Số điện thoại</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="address">Địa chỉ</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="sex">Giới tính</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input class="sex" type="radio" name="sex" id="male" checked> Nam
+                            <input class="sex ml-3" type="radio" name="sex" id="female"> Nữ
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <label for="birth-day">Ngày sinh</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select class="birth-day" name="day" id="day">
+                                <option value="0">Ngày</option>
+                            </select>
+                            <select class="birth-day" name="month" id="month">
+                                <option value="0">Tháng</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="birth-day" name="year" id="year">
+                                <option value="0">Năm</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-5">
+                            <input type="checkbox" name="check-change" id="check-change"> Thay đổi mật khẩu
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="password-change">
+                    <div class="form-group">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <label for="password">Mật khẩu cũ</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <label for="new-password">Mật khẩu mới</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="password" class="form-control" id="new-password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <label for="re-password">Nhập lại</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="password" class="form-control" id="re-password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-5">
+                            <button class="btn btn-primary mt-2 ">Cập nhật</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>LIÊN HỆ</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+                        <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>LIÊN KẾT</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Tất cả sản phẩm</a></li>
+                        <li><a href="#">Lập trình web</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Giải thuật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>ĐĂNG KÝ NHẬN TIN</h3>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Your email">
+                        <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+                    </div>
+                    <div class="mangXaHoi">
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="fanpage">
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
+                            nonce="7nroEQad"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs=""
+                            data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/account.js"></script>
+</body>
+
+</html>
