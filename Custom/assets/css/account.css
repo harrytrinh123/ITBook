@@ -1,0 +1,19 @@
+label {
+    margin:  0;
+}
+
+.birth-day {
+    width: 20%;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.form {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.password-change {
+    display: none;
+}
