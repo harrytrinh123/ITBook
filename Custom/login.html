@@ -12,39 +12,53 @@
 </head>
 
 <body>
-  <div class="background d-flex justify-content-center align-items-center">
-    <div class="row box align-items-center bg-light position-relative">
-      <div class="col-md-6">
-        <div class="row justify-content-center">
-          <img class="user-img w-50 p-3" src="./images/employee.png" alt="user">
+  <div class="content position-absolute">
+    <div class="background d-flex justify-content-center align-items-center">
+      <div class="row box align-items-center bg-light position-relative">
+        <div class="col-md-6">
+          <div class="row justify-content-center">
+            <img class="user-img w-50 p-3" src="./images/employee.png" alt="user">
+          </div>
+        </div>
+        <!-- form login -->
+        <div class="col-md-6 textce p-md-5">
+          <h2 class="text-center text-primary font-weight-bold">Đăng nhập</h2>
+          <form id="form" action="./index.html">
+            <div class="form-group">
+              <label for="unam">Tài khoản:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uname" required>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="remeber"> Nhớ tài khoản
+            </div>
+            <a class="btn btn-primary w-100" id="login-btn">Đăng nhập</a>
+          </form>
+          <p class="forgot text-right">
+            <a href="#">Quên mật khẩu?</a>
+          </p>
+          <p class="register text-right">
+            <a href="./register.html">Tạo tài khoản mới <i class="fas fa-long-arrow-alt-right"></i></a>
+          </p>
         </div>
       </div>
-      <!-- form login -->
-      <div class="col-md-6 textce p-md-5">
-        <h2 class="text-center text-primary font-weight-bold">Đăng nhập</h2>
-        <form action="">
-          <div class="form-group">
-            <label for="unam">Tài khoản:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uname" required>
-          </div>
-          <div class="form-group">
-            <label for="pwd">Mật khẩu:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
-          </div>
-          <div class="form-group">
-            <input type="checkbox" id="remeber"> Nhớ tài khoản
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
-        </form>
-        <p class="forgot text-right">
-          <a href="#">Quên mật khẩu?</a>
-        </p>
-        <p class="register text-right">
-          <a href="./register.html" >Tạo tài khoản mới <i class="fas fa-long-arrow-alt-right"></i></a>
-        </p>
+    </div>
+  
+    <div class="notify-box">
+      <div class="notify">
+        <h4 class="text-primary">Thông báo</h4>
+        <p id="message">Đăng nhập không thành công</p>
+        <button class="btn btn-primary accep-btn">Chấp nhận</button>
       </div>
     </div>
   </div>
+
+  <script src="/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

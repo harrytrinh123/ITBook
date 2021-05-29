@@ -31,3 +31,25 @@ h2 {
 .form-control, .btn {
     border-radius: 20px;
 }
+
+.notify-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(204, 204, 204, 0.3);
+    display: none;
+}
+
+.notify {
+    background-color: white;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
