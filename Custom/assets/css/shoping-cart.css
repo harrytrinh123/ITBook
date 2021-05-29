@@ -1,0 +1,23 @@
+.num-product {
+    width: 60px;
+    border: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+}
+
+.img-detail {
+    width: 80px;
+    height: 100px;
+}
+
+.xoaMuaSau a{
+    text-decoration: none;
+    margin-top: 50px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #363535;
+    font-weight: 500;
+}
+
+.xoaMuaSau a:hover {
+    color: blue;
+}

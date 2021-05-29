@@ -15,58 +15,80 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header class="header">
+  <!-- HEADER -->
+  <header class="mb-3">
     <div class="container">
-      <div class="row header-box">
-        <!-- Heading Logo -->
-        <div class="col-md-4">
-          <h1 class="text-center">
-            <a href="." class="heading-link">
-              <img class="heading-img w-75" src="./images/logo.png" alt="logo.ong"></img>
-            </a>
-          </h1>
+      <div class="row align-items-center text-md-center">
+        <!-- Home image -->
+        <div class="col-md-1">
+          <a href="" class="home-link">
+            <img src="./images/logo.png" alt="" class="heading-img bg-white">
+          </a>
         </div>
-        <!-- Login and SearchButton -->
-        <div class="col-md-8 text-center text-md-right">
-          <div class="box-right">
-            <p class="login-p">Bạn muốn mua sách? Hãy <a href="login.html">Đăng nhập!</a></p>
-
-            <div class="row p-3">
-              <div class="col-10 search-box">
-                <input type="text" class="txt-search">
-                <a href="#" class="search-link">
-                  <i class="fas fa-search"></i>
-                </a>
-              </div>
-              <div class="col-2 text-center">
-                <a href="#" class="cart-link">
-                  <img src="./images/icons8-fast-cart-96.png" alt="" class="cart-img">
-                </a>
-              </div>
-            </div>
+        <!-- Category -->
+        <div class="col-md-1 position-relative">
+          <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fas fa-bars text-white"></i>
+            <span class="text-white span-text">Danh mục</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tất cả sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lập trình web</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giải thuật</a>
+              </li>
+            </ul>
           </div>
         </div>
-  </header>
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container">
-      <a href="." class="navbar-brand">Home</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="products.html" class="nav-link">Tất cả sản phẩm</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Lập trình web</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">AI</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Giải thuật</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Ngôn ngữ lập trình</a></li>
-        </ul>
+        <!-- Search box -->
+        <div class="col-md-8">
+          <div class="search-box">
+            <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
+            <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
+          </div>
+        </div>
+        <!-- User -->
+        <div class="col-md-1">
+          <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
+            data-target="#collapsibleUser">
+            <i class="far fa-user text-white"></i>
+            <span class="text-white span-text">Tài khoản</span>
+          </a>
+          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item">
+                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary">Hỗ trợ</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="col-md-1">
+          <a href="#" class="box-link position-relative d-inline-block">
+            <span class="cart">
+              <i class="fas fa-shopping-cart text-white">
+              </i>
+              <span class="number">0</span>
+            </span>
+            <span class="text-white span-text">Giỏ hàng</span>
+          </a>
+        </div>
       </div>
     </div>
-  </nav>
+  </header>
   <!-- End header -->
   <div class="container">
     <div class="row">
@@ -189,7 +211,7 @@
               <div class="col-sm-3 user_avatar">
                 <img src="./images/user_avatar.png" alt="">
                 <a href="#">Thanh Nhã</a>
-  
+
               </div>
               <div class="col-sm-9 user_comment">
                 <span>Nguyên bộ bao nhiêu tiền vậy shop?</span>
@@ -201,7 +223,7 @@
               <div class="col-sm-3 user_avatar">
                 <img src="./images/user_avatar2.png" alt="">
                 <a href="#">Quốc Hoàng</a>
-  
+
               </div>
               <div class="col-sm-9 user_comment">
                 <span>Sách này có bản cho kindle không ạ?</span>
@@ -209,12 +231,12 @@
             </div>
           </div>
           <div class="product_detail_binhluan">
-  
+
             <div class="row">
               <div class="col-sm-3 user_avatar">
                 <img src="./images/user_avatar3.png" alt="">
                 <a href="#">Hồng Đạt</a>
-  
+
               </div>
               <div class="col-sm-9 user_comment">
                 <span>Sách hay quá, sắp tới sẽ mua.</span>
@@ -222,7 +244,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
