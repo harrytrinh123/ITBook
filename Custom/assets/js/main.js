@@ -1,7 +1,7 @@
 var account = [
     {
         uname: "hongdat",
-        pwd: "12345"
+        pwd: "12345678"
     },
 ];
 
@@ -16,7 +16,7 @@ function checkPassword(pwd) {
 }
 
 function checkPhone(phone) {
-    var regex = /^(03 | 05 | 07 | 08 | 09)\d{7}$/;
+    var regex = /^^[0][3|5|7|8|9]\d{8}$/;
     return Boolean(phone.match(regex));
 }
 

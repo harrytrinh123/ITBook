@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đơn hàng của tôi | sachit.com</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
+  <title>Giỏ hàng của bạn</title>
   <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../jquery-3.6.0.min.js">
   <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="stylesheet" href="./assets/css/shoping-cart.css">
 </head>
 
-<body class="bg-light">
-  <!-- Header -->
+<body>
+  <!-- HEADER -->
   <header class="mb-3">
     <div class="container">
       <div class="row align-items-center text-md-center">
@@ -92,73 +93,117 @@
     </div>
   </header>
 
-  <!-- Content -->
-  <div class="content mb-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 mb-3">
-          <p class="user-name d-flex">
-            <i class="far fa-user"></i>
-            <span>
-              <span class="dec">Tài khoản của</span> <br>
-              <span id="name"></span>
-            </span>
-          </p>
-          <ul class="menu nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link bg-bold" href="./account.html">
-                <i class="fas fa-user"></i>
-                Thông tin tài khoản
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./orders.html">
-                <i class="fab fa-elementor"></i>
-                Quản lý đơn hàng
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-bell"></i>
-                Thông báo của tôi
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-cart-arrow-down"></i>
-                Sản phẩm mua sau
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-heart"></i>
-                Sản phẩm yêu thích
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-comments"></i>
-                Nhận xét của tôi
-              </a>
-            </li>
-          </ul>
+  <!-- MAIN -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Sách</th>
+              <th scope="col"></th>
+              <th scope="col">Giá</th>
+              <th scope="col">Số lượng</th>
+              <th scope="col">Tổng</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <th>1</th>
+              <th scope="row">
+                <img class="img-detail" src="./images/clean-code.jpg" alt="">
+              </th>
+              <th scope="row">
+                Lập trình viên đâu chỉ biết code.
+                <div class="xoaMuaSau">
+                  <a href="#">Xóa</a>
+                  <a href="#">Để dành mua sau</a>
+                </div>
+              </th>
+              <td>350.000</td>
+              <td>
+                <input class="num-product" type="number" value="1">
+              </td>
+              <td>700.000</td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <th scope="row">
+                <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+              </th>
+              <th scope="row">
+                Lập trình viên đâu chỉ biết code.
+                <div class="xoaMuaSau">
+                  <a href="#">Xóa</a>
+                  <a href="#">Để dành mua sau</a>
+                </div>
+              </th>
+              <td>350.000</td>
+              <td>
+                <input class="num-product" type="number" value="1">
+              </td>
+              <td>700.000</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th scope="row">
+                <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+              </th>
+              <th scope="row">
+                Lập trình viên đâu chỉ biết code.
+                <div class="xoaMuaSau">
+                  <a href="#">Xóa</a>
+                  <a href="#">Để dành mua sau</a>
+                </div>
+              </th>
+              <td>350.000</td>
+              <td>
+                <input class="num-product" type="number" value="1">
+              </td>
+              <td>700.000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h6>Địa chỉ nhận hàng</h6>
+            <b>Trịnh Quốc Hoàng | 0989989898</b>
+            <p>14 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+          </div>
         </div>
-        <div class="col-lg-9">
-          <h4 class="text-primary mb-3">Quản lý đơn hàng</h4>
-      <div class="area">
-        <div class="table-responsive">
-          <table class="table table-hover" id="order-table">
-            <th class="table-heading">Mã đơn hàng</th>
-            <th class="table-heading">Ngày mua</th>
-            <th class="table-heading">Sản phẩm</th>
-            <th class="table-heading">Tổng tiền</th>
-            <th class="table-heading">Trạng thái đơn hàng</th>
-          </table>
+        <div class="card tinhTien">
+          <div class="card-header">
+            <h4>Thanh toán</h4>
+            <hr>
+            <div class="thanhTien">
+              <b>Tạm tính</b>
+              <p>700.000 vnd</p>
+            </div>
+
+            <div class="thanhTien">
+              <b>Phí ship</b>
+              <p>700.000 vnd</p>
+            </div>
+            <div class="thanhTien">
+              <b>Tổng tiền</b>
+              <p>1.700.000 vnd</p>
+            </div>
+          </div>
+          <button class="btn btn-danger disabled" style="width: 100%;">Đã thanh toán</button>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="row">
@@ -205,23 +250,18 @@
             <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
               data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
               data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a>
-              </blockquote>
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-
-      
     </div>
   </footer>
+
   <script src="/jquery-3.6.0.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-  <script src="./assets/js/orders.js"></script>
 </body>
 
 </html>
