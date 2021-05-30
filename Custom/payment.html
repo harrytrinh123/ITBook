@@ -2,327 +2,320 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giỏ hàng của bạn</title>
-  <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../jquery-3.6.0.min.js">
-  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="stylesheet" href="./assets/css/payment.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng của bạn</title>
+    <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jquery-3.6.0.min.js">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/payment.css">
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="mb-3">
-    <div class="container">
-      <div class="row align-items-center text-md-center">
-        <!-- Home image -->
-        <div class="col-md-1">
-          <a href="./index.html" class="home-link">
-            <img src="./images/logo.png" alt="" class="heading-img bg-white">
-          </a>
-        </div>
-        <!-- Category -->
-        <div class="col-md-1 position-relative">
-          <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
-            data-target="#collapsibleNavbar">
-            <i class="fas fa-bars text-white"></i>
-            <span class="text-white span-text">Danh mục</span>
-          </a>
-          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
-            <ul class="navbar-nav text-left">
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">Tất cả sản phẩm</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">Lập trình web</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">AI</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">Giải thuật</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Search box -->
-        <div class="col-md-8">
-          <div class="search-box">
-            <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
-            <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
-          </div>
-        </div>
-        <!-- User -->
-        <div class="col-md-1">
-          <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse"
-            data-target="#collapsibleUser">
-            <i class="far fa-user text-white"></i>
-            <span class="text-white span-text">Tài khoản</span>
-          </a>
-          <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
-            <ul class="navbar-nav text-left">
-              <li class="nav-item">
-                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-primary">Về chúng tôi</a>
-              </li>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Cart -->
-        <div class="col-md-1">
-          <a href="shoping-cart.html" class="box-link position-relative d-inline-block">
-            <span class="cart">
+    <!-- HEADER -->
+    <header class="mb-3">
+        <div class="container">
+            <div class="row align-items-center text-md-center">
+                <!-- Home image -->
+                <div class="col-md-1">
+                    <a href="./index.html" class="home-link">
+                        <img src="./images/logo.png" alt="" class="heading-img bg-white">
+                    </a>
+                </div>
+                <!-- Category -->
+                <div class="col-md-1 position-relative">
+                    <a href="#" class="menu-link box-link navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fas fa-bars text-white"></i>
+                        <span class="text-white span-text">Danh mục</span>
+                    </a>
+                    <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleNavbar">
+                        <ul class="navbar-nav text-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./products.html">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./products.html">Lập trình web</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./products.html">AI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./products.html">Giải thuật</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search box -->
+                <div class="col-md-8">
+                    <div class="search-box">
+                        <input type="text" class="txt-search" placeholder="Tìm sản phẩm mong muốn...">
+                        <button class="btn btn-search"><i class="fas fa-search"></i>Tìm kiếm</button>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="col-md-1">
+                    <a href="#" class="user-link box-link navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#collapsibleUser">
+                        <i class="far fa-user text-white"></i>
+                        <span class="text-white span-text">Tài khoản</span>
+                    </a>
+                    <div class="collapse navbar-collapse bg-light position-absolute box" id="collapsibleUser">
+                        <ul class="navbar-nav text-left">
+                            <li class="nav-item">
+                                <a href="login.html" class="btn btn-warning">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-primary">Về chúng tôi</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Cart -->
+                <div class="col-md-1">
+                    <a href="shoping-cart.html" class="box-link position-relative d-inline-block">
+                        <span class="cart">
               <i class="fas fa-shopping-cart text-white">
               </i>
               <span class="number">0</span>
-            </span>
-            <span class="text-white span-text">Giỏ hàng</span>
-          </a>
+                        </span>
+                        <span class="text-white span-text">Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- MAIN -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h4>1. Chọn hình thức giao hàng</h4>
-        <div class="card">
-          <div class=" card-body">
-            <div class="row">
-              <div class="col-md-1">
-                <input type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="giaohang" src="./images/tikifast.png" alt="">
-                <label for="">Giao tiết kiệm</label>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <input type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="giaohang" src="./images/tikinow.png" alt="">
-                <label for="">Giao hàng nhanh</label>
-              </div>
-
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="./images/clean-code.jpg" class="image-detail" alt="">
-              </div>
-              <div class="col-md-4">
-                <p>Sách The clean code</p>
-              </div>
-              <div class="col-md-4">
-                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
-                <span>Được giao bởi Giao hàng tiết kiệm</span>
-              </div>
-              <div class="col-md-2">
-                <p>19.000đ</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="./images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg" class="image-detail" alt="">
-              </div>
-              <div class="col-md-4">
-                <p>Sách lược sử hacker</p>
-              </div>
-              <div class="col-md-4">
-                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
-                <span>Được giao bởi NinjaVan</span>
-              </div>
-              <div class="col-md-2">
-                <p>19.000đ</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="./images/gian-diep-mang.jpg" class="image-detail" alt="">
-              </div>
-              <div class="col-md-4">
-                <p>Sách Gián điệp mạng</p>
-              </div>
-              <div class="col-md-4">
-                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
-                <span>Được giao bởi NinjaVan</span>
-              </div>
-              <div class="col-md-2">
-                <p>19.000đ</p>
-              </div>
-
-            </div>
-            <!-- End chon giao hang -->
-          </div>
-        </div>
-
-        <!-- Chon hinh thuc thanh toan -->
-        <h4>2. Chọn hình thức thanh toán</h4>
-        <div class="card">
-          <div class=" card-body">
-            <div class="row">
-              <div class="col-md-1">
-                <input class="radioThanhToan" type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="hinhThucTT" src="./images/tienmat.svg" alt="">
-                <label for="">Thanh toán tiền mặt khi nhận hàng</label>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <input class="radioThanhToan" type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="hinhThucTT" src="./images/visa.svg" alt="">
-                <label for="">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <input class="radioThanhToan" type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="hinhThucTT" class="icon-thanhtoan" src="./images/momo.svg" alt="">
-                <label for="">Thanh toán bằng ví MoMo</label>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-                <input class="radioThanhToan" type="radio">
-              </div>
-              <div class="col-md-11">
-                <img class="hinhThucTT" class="icon-thanhtoan" src="./images/zalopay.svg" alt="">
-                <label for="">Thanh toán bằng ví ZaloPay</label>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-danger" style="width: 400px; margin: 10px;">ĐẶT MUA</button>
-      </div>
-
-      <!-- col 4 -->
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-header">
-            <h6>Địa chỉ nhận hàng</h6>
-            <b>Trịnh Quốc Hoàng | 0989989898</b>
-            <p>14 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <h4>Mã giảm giá</h4>
-
-            <form class="form-inline">
-              <div class="form-group">
-                <label for="maGiamGia" class="sr-only">Password</label>
-                <input type="text" class="form-control" id="maGiamGia" placeholder="Mã giảm giá xxx-xxx-xxx">
-              </div>
-              <button type="submit" class="btn btn-primary ml-2">Thêm</button>
-            </form>
-          </div>
-        </div>
-        <div class="card tinhTien">
-          <div class="card-header">
-            <h4>Thanh toán</h4>
-            <hr>
-            <div class="thanhTien">
-              <b>Tạm tính</b>
-              <p>700.000 vnd</p>
-            </div>
-
-            <div class="thanhTien">
-              <b>Phí ship</b>
-              <p>57.000 vnd</p>
-            </div>
-            <hr>
-            <div class="thanhTien">
-              <b>Tổng tiền</b>
-              <p>757.000 vnd</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
+    <!-- MAIN -->
     <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h3>LIÊN HỆ</h3>
-          <ul>
-            <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
-            <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
-            <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3>LIÊN KẾT</h3>
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="products.html">Tất cả sản phẩm</a></li>
-            <li><a href="#">Lập trình web</a></li>
-            <li><a href="#">AI</a></li>
-            <li><a href="#">Giải thuật</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3>ĐĂNG KÝ NHẬN TIN</h3>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">@</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Your email">
-            <p>Hãy nhập email của bạn vào đây để nhận tin</p>
-          </div>
-          <div class="mangXaHoi">
-            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
-          </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="mt-2 mb-2">1. Chọn hình thức giao hàng</h4>
+                <div class="card">
+                    <div class=" card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="giaohang" src="./images/tikifast.png" alt="">
+                                <label for="">Giao tiết kiệm</label>
+                            </div>
 
-        </div>
-        <div class="col-md-3">
-          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-          <div class="fanpage">
-            <script async defer crossorigin="anonymous"
-              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1"
-              nonce="7nroEQad"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
-              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-              data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
-                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="giaohang" src="./images/tikinow.png" alt="">
+                                <label for="">Giao hàng nhanh</label>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/clean-code.jpg" class="image-detail" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sách The clean code</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
+                                <span>Được giao bởi Giao hàng tiết kiệm</span>
+                            </div>
+                            <div class="col-md-2">
+                                <p>19.000đ</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg" class="image-detail" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sách lược sử hacker</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
+                                <span>Được giao bởi NinjaVan</span>
+                            </div>
+                            <div class="col-md-2">
+                                <p>19.000đ</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/gian-diep-mang.jpg" class="image-detail" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sách Gián điệp mạng</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span>Giao hàng vào Thứ Hai, 31/5</span><br>
+                                <span>Được giao bởi NinjaVan</span>
+                            </div>
+                            <div class="col-md-2">
+                                <p>19.000đ</p>
+                            </div>
+
+                        </div>
+                        <!-- End chon giao hang -->
+                    </div>
+                </div>
+
+                <!-- Chon hinh thuc thanh toan -->
+                <h4 class="mb-2 mt-2">2. Chọn hình thức thanh toán</h4>
+                <div class="card">
+                    <div class=" card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input class="radioThanhToan" type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="hinhThucTT" src="./images/tienmat.svg" alt="">
+                                <label for="">Thanh toán tiền mặt khi nhận hàng</label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input class="radioThanhToan" type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="hinhThucTT" src="./images/visa.svg" alt="">
+                                <label for="">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input class="radioThanhToan" type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="hinhThucTT" class="icon-thanhtoan" src="./images/momo.svg" alt="">
+                                <label for="">Thanh toán bằng ví MoMo</label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input class="radioThanhToan" type="radio">
+                            </div>
+                            <div class="col-md-11">
+                                <img class="hinhThucTT" class="icon-thanhtoan" src="./images/zalopay.svg" alt="">
+                                <label for="">Thanh toán bằng ví ZaloPay</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-danger mt-2 mb-2" style="width: 400px;">ĐẶT MUA</button>
             </div>
-          </div>
+
+            <!-- col 4 -->
+            <div class="col-md-4">
+                <div class="card" style="margin-top: 44px;">
+                    <div class="card-header">
+                        <h6>Địa chỉ nhận hàng</h6>
+                        <b>Trịnh Quốc Hoàng | 0989989898</b>
+                        <p>14 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+                    </div>
+                </div>
+                <div class="card mt-1 mb-1">
+                    <div class="card-header">
+                        <h4>Mã giảm giá</h4>
+
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="maGiamGia" class="sr-only">Password</label>
+                                <input type="text" class="form-control" id="maGiamGia" placeholder="Mã giảm giá xxx-xxx-xxx">
+                            </div>
+                            <button type="submit" class="btn btn-primary ml-2">Thêm</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card tinhTien">
+                    <div class="card-header">
+                        <h4>Thanh toán</h4>
+                        <hr>
+                        <div class="thanhTien">
+                            <b>Tạm tính</b>
+                            <p>700.000 vnd</p>
+                        </div>
+
+                        <div class="thanhTien">
+                            <b>Phí ship</b>
+                            <p>57.000 vnd</p>
+                        </div>
+                        <hr>
+                        <div class="thanhTien">
+                            <b>Tổng tiền</b>
+                            <p>757.000 vnd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>LIÊN HỆ</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> SachIT.com</a></li>
+                        <li><a href="mailto:sachit@gmail.com"><i class="far fa-envelope"></i> sachit@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> 0989199399</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>LIÊN KẾT</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Tất cả sản phẩm</a></li>
+                        <li><a href="#">Lập trình web</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Giải thuật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>ĐĂNG KÝ NHẬN TIN</h3>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Your email">
+                        <p>Hãy nhập email của bạn vào đây để nhận tin</p>
+                    </div>
+                    <div class="mangXaHoi">
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/meowmeow.Daomeo/"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="fanpage">
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=2242372112682519&autoLogAppEvents=1" nonce="7nroEQad"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

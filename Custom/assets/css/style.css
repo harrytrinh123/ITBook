@@ -269,3 +269,7 @@ label {
 .user-name #name {
     font-size: 1.25rem;
 }
+
+.modal-content {
+    width: 600px;
+}
