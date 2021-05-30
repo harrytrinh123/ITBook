@@ -81,7 +81,8 @@
         </div>
         <!-- Cart -->
         <div class="col-md-1">
-          <a data-toggle="modal" data-target="#thongTinCart" id="btn-cart" href="shoping-cart.html" class="box-link position-relative d-inline-block">
+          <a data-toggle="modal" data-target="#thongTinCart" id="btn-cart" href="shoping-cart.html"
+            class="box-link position-relative d-inline-block">
             <span class="cart">
               <i class="fas fa-shopping-cart text-white">
               </i>
@@ -106,79 +107,79 @@
         <div class="modal-body">
           <table class="table">
             <thead class="thead-light">
-                <tr>
-                    <th scope="col">STT</th>
-                    <th scope="col">Sách</th>
-                    <th scope="col"></th>
-                    <th scope="col">Giá</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Tổng</th>
-                </tr>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Sách</th>
+                <th scope="col"></th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
             </thead>
             <tbody>
 
-                <tr>
-                    <th>1</th>
-                    <th scope="row">
-                        <img class="img-detail" src="./images/clean-code.jpg" alt="">
-                    </th>
-                    <th scope="row">
-                        Lập trình viên đâu chỉ biết code.
-                        <div class="xoaMuaSau">
-                            <a href="#">Xóa</a>
-                            <a href="#">Để dành mua sau</a>
-                        </div>
-                    </th>
-                    <td>350.000</td>
-                    <td>
-                        <input class="num-product" type="number" value="1">
-                    </td>
-                    <td>700.000</td>
-                </tr>
+              <tr>
+                <th>1</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/clean-code.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
 
-                <tr>
-                    <th>2</th>
-                    <th scope="row">
-                        <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
-                    </th>
-                    <th scope="row">
-                        Lập trình viên đâu chỉ biết code.
-                        <div class="xoaMuaSau">
-                            <a href="#">Xóa</a>
-                            <a href="#">Để dành mua sau</a>
-                        </div>
-                    </th>
-                    <td>350.000</td>
-                    <td>
-                        <input class="num-product" type="number" value="1">
-                    </td>
-                    <td>700.000</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <th scope="row">
-                        <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
-                    </th>
-                    <th scope="row">
-                        Lập trình viên đâu chỉ biết code.
-                        <div class="xoaMuaSau">
-                            <a href="#">Xóa</a>
-                            <a href="#">Để dành mua sau</a>
-                        </div>
-                    </th>
-                    <td>350.000</td>
-                    <td>
-                        <input class="num-product" type="number" value="1">
-                    </td>
-                    <td>700.000</td>
-                </tr>
+              <tr>
+                <th>2</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
 
             </tbody>
           </table>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
-          <button type="button" class="btn btn-primary">Đến giỏ hàng</button>
+          <a href="./shoping-cart.html" type="button" class="btn btn-primary">Đến giỏ hàng</a>
         </div>
       </div>
     </div>
@@ -591,17 +592,7 @@
   <script src="/jquery-3.6.0.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-  <script>
-    $(function() {
-
-      $('#btn-cart').hover(function() {
-          var modalId = $(this).data('target');
-          $(modalId).modal('show');
-
-        });
-
-    });
-  </script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
