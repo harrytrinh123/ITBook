@@ -240,4 +240,6 @@ footer ul li a:hover {
         display: none;
     }
 
-    /* Order */
+.modal-content {
+    width: 600px;
+}
