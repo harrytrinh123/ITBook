@@ -40,6 +40,10 @@ h1 {
     border-radius: 5px;
 }
 
+.bg-bold {
+    background-color: #ccc
+}
+
 /* ====== HEADING ========== */
 
 header {
@@ -220,25 +224,51 @@ footer ul li a:hover {
     }
 
 /* Acount */
-    label {
-        margin:  0;
-    }
-    
-    .birth-day {
-        width: 20%;
-        padding: 4px;
-        margin-left: 4px;
-    }
-    
-    .area {
-        background-color: white;
-        padding: 30px 20px;
-        border-radius: 5px;
-    }
-    
-    .password-change {
-        display: none;
-    }
+label {
+    margin:  0;
+}
+
+.birth-day {
+    width: 30%;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.area {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.password-change {
+    display: none;
+}
+
+.menu li a {
+    color: rgb(68, 67, 67);
+    padding: 8px 0;
+}
+
+.menu li:hover {
+    background-color: #ccc;
+}
+
+.menu li i {
+    padding: 0 20px;
+}
+
+.user-name i {
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.user-name .dec {
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.user-name #name {
+    font-size: 1.25rem;
+}
 
 .modal-content {
     width: 600px;

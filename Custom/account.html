@@ -95,15 +95,58 @@
     <!-- Content -->
     <div class="content mb-3">
         <div class="container">
-            <h4 class="text-primary mb-3">Thông tin tài khoản</h4>
-            <form class="form area">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <p class="user-name d-flex">
+                        <i class="far fa-user"></i>
+                        <span>
+                            <span class="dec">Tài khoản của</span> <br>
+                            <span id="name"></span>
+                        </span>
+                    </p>
+                    <ul class="menu nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bg-bold" href="./account.html">
+                                <i class="fas fa-user"></i>
+                                Thông tin tài khoản
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./orders.html">
+                                <i class="fab fa-elementor"></i>
+                                Quản lý đơn hàng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-bell"></i>
+                                Thông báo của tôi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-heart"></i>
+                                Sản phẩm yêu thích
+                                </a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-comments"></i>
+                                Nhận xét của tôi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <h4 class="text-primary mb-3">Thông tin tài khoản</h4>
+            <form class="form area" id="form" action="">
                 <div class="form-group">
                     <div class="row align-items-center">
                         <div class="col-md-2">
                             <label for="uname">Họ tên</label>
                         </div>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" id="uname" required>
+                            <input type="text" class="form-control" id="uname" pattern="^([A-z][a-z]+)(\s[A-z][a-z]+)*$" required>
                         </div>
                     </div>
                 </div>
@@ -113,7 +156,7 @@
                             <label for="phone">Số điện thoại</label>
                         </div>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" id="phone" required>
+                            <input type="text" class="form-control" id="phone" pattern="^^[0][3|5|7|8|9]\d{8}$" required>
                         </div>
                     </div>
                 </div>
@@ -192,30 +235,30 @@
                     <div class="form-group">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <label for="password">Mật khẩu cũ</label>
+                                <label for="pwd">Mật khẩu cũ</label>
                             </div>
                             <div class="col-md-5">
-                                <input type="password" class="form-control" id="password">
+                                <input type="password" class="form-control" id="pwd">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <label for="new-password">Mật khẩu mới</label>
+                                <label for="new-pwd">Mật khẩu mới</label>
                             </div>
                             <div class="col-md-5">
-                                <input type="password" class="form-control" id="new-password">
+                                <input type="password" class="form-control" id="new-pwd" pattern="^\w{8,}$">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <label for="re-password">Nhập lại</label>
+                                <label for="re-pwd">Nhập lại</label>
                             </div>
                             <div class="col-md-5">
-                                <input type="password" class="form-control" id="re-password">
+                                <input type="password" class="form-control" id="re-pwd" pattern="^\w{8,}$">
                             </div>
                         </div>
                     </div>
@@ -226,11 +269,13 @@
                         <div class="col-md-2">
                         </div>
                         <div class="col-md-5">
-                            <button class="btn btn-primary mt-2 ">Cập nhật</button>
+                            <a type="submit" href="#" class="btn btn-primary mt-2" id="update">Cập nhật</a>
                         </div>
                     </div>
                 </div>
             </form>
+                </div>
+            </div>
         </div>
     </div>
 
