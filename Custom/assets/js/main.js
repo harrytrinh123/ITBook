@@ -155,4 +155,5 @@ $('.btn-cart').click((e) => {
     `;
 
     table.append(row);
+    $('#num-cart').text(length);
 });

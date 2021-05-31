@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
   <link rel="stylesheet" href="../Custom/assets/css/style.css">
   <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <link rel="stylesheet" href="../Custom/assets/css/shoping-cart.css">
 </head>
 
 <body>
@@ -77,11 +78,11 @@
         </div>
         <!-- Cart -->
         <div class="col-md-1">
-          <a href="shoping-cart.html" class="box-link position-relative d-inline-block">
+          <a data-toggle="modal" data-target="#thongTinCart" id="btn-cart" href="shoping-cart.html" class="box-link position-relative d-inline-block">
             <span class="cart">
               <i class="fas fa-shopping-cart text-white">
               </i>
-              <span class="number">0</span>
+              <span id="num-cart" class="number">3</span>
             </span>
             <span class="text-white span-text">Giỏ hàng</span>
           </a>
@@ -160,7 +161,7 @@
                 Robert Martins Clean Code Agile Software Craftmanship.
               </p>
             </div>
-            <form class="product_detail_frm" action="POST">
+            <!-- <form class="product_detail_frm"> -->
               <div class="select_wrapper">
                 <label for="soLuong">Số lượng</label>
                 <input type="number" min="1" value="1" class="product_detail_item_quantity">
@@ -174,7 +175,7 @@
                   <button id="buy_now" class="btn btn-warning"><i class="fas fa-check-circle"></i> Mua ngay</button>
                 </div>
               </div>
-            </form>
+            <!-- </form> -->
             <div class="product_detail_icon_mangXH">
               <a href="#" class="product_detail_icon_mangXH_FB" data-tooltip="Facebook">
                 <i class="fab fa-facebook"></i>
@@ -312,6 +313,99 @@
       <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
     </li>
   </ul>
+
+  <!-- Modal -->
+  <div class="modal fade" id="thongTinCart">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Sách</th>
+                <th scope="col"></th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th>1</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/clean-code.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <a href="./shoping-cart.html" type="button" class="btn btn-primary">Đến giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/pro-detail.js"></script>
 </body>
 
 </html>
