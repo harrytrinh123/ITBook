@@ -35,7 +35,7 @@ function Order(id, date, content, total, status) {
 
 function addRow(id, date, content, total, status) {
     var row = "<tr>";
-    row += `<td><a href="/Custom/order-detail.html">${id}</a></td>`;
+    row += `<td><a href="../Custom/order-detail.html">${id}</a></td>`;
     row += `<td>${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</td>`;
     row += `<td>${content}</td>`;
     row += `<td>${total}</td>`;
