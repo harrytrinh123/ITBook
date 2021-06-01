@@ -77,42 +77,42 @@ var list_product = [
     {
         name : "Code dạo ký sự",
         price : "200.000",
-        img : "/Custom/images/code-dao-ki-su.jpg"
+        img : "/images/code-dao-ki-su.jpg"
     },
     {
         name : "The clean code",
         price : "169.000",
-        img : "/Custom/images/clean-code.jpg"
+        img : "/images/clean-code.jpg"
     },
     {
         name : "Gián điệp mạng",
         price : "150.000",
-        img : "/Custom/images/gian-diep-mang.jpg"
+        img : "/images/gian-diep-mang.jpg"
     },
     {
         name : "Liệu IT đã hết thời?",
         price : "150.000",
-        img : "/Custom/images/lieu-it-da-het-thoi.jpg"
+        img : "/images/lieu-it-da-het-thoi.jpg"
     },
     {
         name : "Lược sử hacker.",
         price : "150.000",
-        img : "/Custom/images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg"
+        img : "/images/sach-hay-ve-it-cong-nghe-hacker-luoc-su.jpg"
     },
     {
         name : "The design of everyday things",
         price : "150.000",
-        img : "/Custom/images/the-design-of-everyday-things.jpg"
+        img : "/images/the-design-of-everyday-things.jpg"
     },
     {
         name : "Nghệ thuật ẩn mình.",
         price : "150.000",
-        img : "/Custom/images/nghe_thuat_an_minh.jpg"
+        img : "/images/nghe_thuat_an_minh.jpg"
     },
     {
         name : "How technology works?",
         price : "150.000",
-        img : "/Custom/images/how-technology-works.jpg"
+        img : "/images/how-technology-works.jpg"
     }
 ];
 
