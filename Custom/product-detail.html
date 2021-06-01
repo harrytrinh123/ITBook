@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
   <link rel="stylesheet" href="../Custom/assets/css/style.css">
   <link rel="stylesheet" href="../Custom/assets/css/products.css">
+  <link rel="stylesheet" href="../Custom/assets/css/shoping-cart.css">
 </head>
 
 <body>
@@ -69,10 +70,10 @@
                 <a href="login.html" class="btn btn-warning">Đăng nhập</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="btn btn-danger">Thông tin tài khoản</a>
+                <a href="account.html" class="btn btn-warning">Thông tin tài khoản</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="btn btn-primary">Về chúng tôi</a>
+                <a href="about.html" class="btn btn-primary">Về chúng tôi</a>
               </li>
             </ul>
           </div>
@@ -84,7 +85,7 @@
             <span class="cart">
               <i class="fas fa-shopping-cart text-white">
               </i>
-              <span class="number">0</span>
+              <span id="num-cart" class="number">3</span>
             </span>
             <span class="text-white span-text">Giỏ hàng</span>
           </a>
@@ -98,11 +99,21 @@
       <div class="col-md-3 product_sidebar">
         <h2 class="danhmuc">DANH MỤC</h2>
         <ul class="list-group">
-          <a href="./products.html"><li class="list-group-item">Tất cả sản phẩm</li></a>
-          <a href=""><li class="list-group-item">Sản phẩm bán chạy</li></a>
-          <a href=""><li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li></a>
-          <a href=""><li class="list-group-item">Ngôn ngữ lập trình</li></a>
-          <a href=""><li class="list-group-item">Trí tuệ nhân tạo</li></a>
+          <a href="./products.html">
+            <li class="list-group-item">Tất cả sản phẩm</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Sản phẩm bán chạy</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Cấu trúc dữ liệu & giải thuật</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Ngôn ngữ lập trình</li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Trí tuệ nhân tạo</li>
+          </a>
         </ul>
         <img class="left-img-ad" src="../Custom/images/love-book.jpg" alt="">
         <img class="left-img-ad" src="../Custom/images/love-book2.png" alt="">
@@ -163,31 +174,36 @@
                 Robert Martins Clean Code Agile Software Craftmanship.
               </p>
             </div>
-            <form class="product_detail_frm" action="POST">
-              <div class="select_wrapper">
-                <label for="soLuong">Số lượng</label>
-                <input type="number" min="1" value="1" class="product_detail_item_quantity">
+            <!-- <form class="product_detail_frm"> -->
+            <div class="select_wrapper">
+              <label for="soLuong">Số lượng</label>
+              <input type="number" min="1" value="1" class="product_detail_item_quantity">
+            </div>
+            <div class="row product_detail_btn">
+              <div class="col-md-6">
+                <button id="add_to_cart" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Thêm vào
+                  giỏ</button>
               </div>
-              <div class="row product_detail_btn">
-                <div class="col-md-6">
-                  <button id="add_to_cart" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Thêm vào
-                    giỏ</button>
-                </div>
-                <div class="col-md-6">
+              <div class="col-md-6">
+                <a href="shoping-cart.html">
                   <button id="buy_now" class="btn btn-warning"><i class="fas fa-check-circle"></i> Mua ngay</button>
-                </div>
+                </a>
               </div>
-            </form>
+            </div>
+            <!-- </form> -->
             <div class="product_detail_icon_mangXH">
-              <a href="#" class="product_detail_icon_mangXH_FB" data-tooltip="Facebook">
+              <a href="#" class="product_detail_icon_mangXH_FB" style="color: rgb(18, 18, 207);"
+                data-tooltip="Facebook">
                 <i class="fab fa-facebook"></i>
               </a>
 
-              <a href="#" class="product_detail_icon_mangXH_TW" data-tooltip="Twitter">
+              <a href="#" class="product_detail_icon_mangXH_TW" style="color: rgba(29,161,242,1.00);"
+                data-tooltip="Twitter">
                 <i class="fab fa-twitter-square"></i>
               </a>
 
-              <a href="#" class="product_detail_icon_mangXH_GG" data-tooltip="Google Plus">
+              <a href="#" class="product_detail_icon_mangXH_GG" style="color: rgb(146, 41, 59);"
+                data-tooltip="Google Plus">
                 <i class="fab fa-google-plus"></i>
               </a>
             </div>
@@ -315,6 +331,99 @@
       <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
     </li>
   </ul>
+
+  <!-- Modal -->
+  <div class="modal fade" id="thongTinCart">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Sách</th>
+                <th scope="col"></th>
+                <th scope="col">Giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th>1</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/clean-code.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/how-technology-works.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th scope="row">
+                  <img class="img-detail" src="./images/gian-diep-mang.jpg" alt="">
+                </th>
+                <th scope="row">
+                  Lập trình viên đâu chỉ biết code.
+                  <div class="xoaMuaSau">
+                    <a href="#">Xóa</a>
+                    <a href="#">Để dành mua sau</a>
+                  </div>
+                </th>
+                <td>350.000</td>
+                <td>
+                  <input class="num-product" type="number" value="1">
+                </td>
+                <td>700.000</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <a href="./shoping-cart.html" type="button" class="btn btn-primary">Đến giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/pro-detail.js"></script>
 </body>
 
 </html>

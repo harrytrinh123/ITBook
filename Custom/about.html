@@ -5,17 +5,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đơn hàng của tôi | sachit.com</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
+  <title>Sách IT mới nhất được cập nhật thường xuyên</title>
   <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../jquery-3.6.0.min.js">
   <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/products.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="stylesheet" href="./assets/css/shoping-cart.css">
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .banner {
+    width: 100%;
+    margin-top: -16px;
+    position: relative;
+  }
 
+  .banner img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 3em;
+  }
+
+  .thanhVien {
+    height: 28rem;
+  }
+
+  .thanhVien img {
+    width: 15rem;
+    height: 17rem;
+  }
+
+  button[type=submit] {
+    width: 300px;
+    margin-left: 25%;
+  }
+
+  .card-body p {
+    line-height: 18px;
+  }
+
+</style>
 <body class="bg-light">
   <!-- Header -->
   <header class="mb-3">
@@ -71,10 +120,8 @@
                 <a href="login.html" class="btn btn-warning">Đăng nhập</a>
               </li>
               <li class="nav-item">
-                <a href="account.html" class="btn btn-warning">Thông tin tài khoản</a>
-              </li>
-              <li class="nav-item">
                 <a href="about.html" class="btn btn-primary">Về chúng tôi</a>
+              </li>
               </li>
             </ul>
           </div>
@@ -94,70 +141,79 @@
       </div>
     </div>
   </header>
+  <div class="banner">
+    <img src="./images/bannerabout.jpg" alt="">
+    <div class="centered"><h1 class="gtNhom">Giới thiệu về nhóm</h1></div>
+    
+  </div>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-8">
+        <h3>Về chúng tôi</h3>
+        <p>Có rất nhiều sách lập trình ngoài kia, bao gồm các chủ đề khác nhau và các ngôn ngữ lập trình khác nhau.
 
-  <!-- Content -->
-  <div class="content mb-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 mb-3">
-          <p class="user-name d-flex">
-            <i class="far fa-user"></i>
-            <span>
-              <span class="dec">Tài khoản của</span> <br>
-              <span id="name"></span>
-            </span>
-          </p>
-          <ul class="menu nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="./account.html">
-                <i class="fas fa-user"></i>
-                Thông tin tài khoản
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bg-bold" href="./orders.html">
-                <i class="fab fa-elementor"></i>
-                Quản lý đơn hàng
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-bell"></i>
-                Thông báo của tôi
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-cart-arrow-down"></i>
-                Sản phẩm mua sau
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-heart"></i>
-                Sản phẩm yêu thích
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-comments"></i>
-                Nhận xét của tôi
-              </a>
-            </li>
-          </ul>
+          Với tất cả các tùy chọn, thật dễ bị nhầm lẫn và không bao giờ bắt đầu.
+          
+          Trong bài viết này, tôi sẽ chia sẻ với bạn những cuốn sách yêu thích của tôi trong nỗ lực giúp bạn đưa ra quyết định phù hợp nhất với bạn.
+          
+          Triết lý của tôi rất đơn giản
+          
+          Đầu tiên, tất cả những cuốn sách tôi giới thiệu ở đây là những cuốn sách mà tôi đã tự đọc và chúng được cộng đồng đánh giá cao .
+          
+          Thứ hai, tôi sẽ giữ danh sách này nhỏ nhất có thể mà không ảnh hưởng đến tính tổng quát.
+          
+          Nhưng trước khi chúng tôi bắt đầu, tôi muốn đề cập rằng những cuốn sách này chỉ liên quan đến chủ đề Lập trình .</p>
+          <p>Lập trình đang ngày càng thu hút được sự quan tâm của nhiều người vì sự cần thiết của ngành này đối với xã hội hiện đại ngày nay. Có rất nhiều đầu sách dạy lập trình được bán trên thị trường với nội dung và cấp độ đa dạng từ cơ bản cho người mới bắt đầu đến chuyên nghiệp, nâng cao; với nhiều loại ngôn ngữ lập trình khác nhau như C++, Java, PHP hay Python nên nhiều người có thể không biết sách nào tốt hơn để tự học.
+
+            Vì vậy, lần này, mybest sẽ giới thiệu đến các bạn cách chọn sách lập trình và top 10 cuốn sách dạy lập trình hay nhất được ưa chuộng hiện nay. Hãy cùng chọn ra những cuốn sách dạy lập trình thật hay để bổ sung kiến thức cho mình nhé.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-thumbnail" src="./images//bookshelf.jpg" alt="">
+      </div>
+      
+    </div>
+    <div class="row mt-2 mb-2">
+      <div class="col-md-6">
+        <h3>Thành viên</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card thanhVien" >
+              <img src="./images/quochoang.jpg" class="card-img-top rounded-circle" alt="...">
+              <div class="card-body">
+                <h6>Họ tên: Trịnh Quốc Hoàng</h6>
+                <p>MSSV: 19431421</p>
+                <p>Lớp: DHKHMT15A</p>
+                <p>Ước mơ một ngày trở thành lập trình viên.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card thanhVien">
+              <img src="./images/hongdat.jpg" class="card-img-top rounded-circle" alt="...">
+              <div class="card-body">
+                <h6>Họ tên: Nguyễn Hồng Đạt</h6>
+                <p>MSSV: 19433071</p>
+                <p>Lớp: DHKHMT15A</p>
+                <p>Có niềm đam mê với lập trình để tạo ra những sản phẩm có ích cho xã hội.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-9">
-          <h4 class="text-primary mb-3">Quản lý đơn hàng</h4>
-      <div class="area">
-        <div class="table-responsive">
-          <table class="table table-hover" id="order-table">
-            <th class="table-heading">Mã đơn hàng</th>
-            <th class="table-heading">Ngày mua</th>
-            <th class="table-heading">Sản phẩm</th>
-            <th class="table-heading">Tổng tiền</th>
-            <th class="table-heading">Trạng thái đơn hàng</th>
-          </table>
-        </div>
+      </div>
+      <div class="col-md-6">
+        
+        <form>
+          <h3 class="text-center">Gửi tin nhắn cho chúng tôi</h3>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email của bạn...">
+          </div>
+          <div class="form-group mt-4">
+            <textarea placeholder="Chúng tôi có thể giúp được gì cho bạn?" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
+          <div class="form-group mt-5">
+            <button type="submit" class="btn btn-primary mb-2">SUBMIT</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -208,23 +264,18 @@
             <div class="fb-page" data-href="https://www.facebook.com/meowmeow.Daomeo/" data-tabs="" data-width=""
               data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
               data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a>
-              </blockquote>
+              <blockquote cite="https://www.facebook.com/meowmeow.Daomeo/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/meowmeow.Daomeo/">Đảo mèo</a></blockquote>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-
-      
     </div>
   </footer>
   <script src="/jquery-3.6.0.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
-  <script src="./assets/js/orders.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
