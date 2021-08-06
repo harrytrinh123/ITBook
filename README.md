@@ -9,7 +9,7 @@
 •	Order-management.html\
 •	Account.html\
 •	About.html\
-•	Contact.html\
+•	Contact.html
 - Admin (Future):\
 •	Login.html\
 •	Index.html\
