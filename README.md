@@ -1,4 +1,5 @@
 # SachIT.com-DoAnHeThongCNWeb
+# Pages
 - Custom:\
 •	Index.html\
 •	Products.html\
@@ -15,3 +16,6 @@
 •	Index.html\
 •	Product-management.html\
 •	Account.html
+# My team
+- Trinh Quoc Hoang
+- Nguyen Hong Dat
