@@ -1,5 +1,5 @@
 # SachIT.com-DoAnHeThongCNWeb
-Custom:\
+- Custom:\
 •	Index.html\
 •	Products.html\
 •	Product-detail.html\
@@ -10,7 +10,7 @@ Custom:\
 •	Account.html\
 •	About.html\
 •	Contact.html\
-Admin(Future):\
+- Admin (Future):\
 •	Login.html\
 •	Index.html\
 •	Product-management.html\
