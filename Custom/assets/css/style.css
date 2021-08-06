@@ -273,3 +273,7 @@ label {
 .modal-content {
     width: 600px;
 }
+
+.fanpage {
+    overflow: hidden;
+}
